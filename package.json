@@ -1,57 +1,23 @@
 {
-    
-    "version": "1.0.0",
-    
-    "description": "",
-    
-    "main": "server.ts",
-    
-    "scripts": {
-    
-        
-    "build": "rm -rf build && tsc.",
-    
-        
-    "start": "node build/server.js",
-    
-        
-    "postinstall": "tsc"
-    
+  "name": "api-contexte-amine",
+  "version": "1.0.0",
+  "description": "Bienvenue dans le projet \"API RESTFUL AVEC CONTEXTE\". Cette application est une API web développée avec Node.js, Express.js, TypeScript et MongoDB, conçue pour gérer les données liées aux employés et\r à leur contexte.",
+  "main": "servers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+"dependencies": {
+        "chalk": "^4.1.2",
+        "dotenv": "^16.0.0",
+        "express": "^4.17.3",
+        "joi": "^17.6.0",
+        "mongoose": "^6.2.2"
     },
-    
-    "author": "",
-    
-    "license": "MIT",
-    
-    "dependencies": {
-    
-        
-    "chalk": "^4.1.2",
-    
-        
-    "dotenv": "^16.0.0",
-    
-        
-    "express": "^4.17.3",
-    
-        
-    "joi": "^17.6.0",
-    
-        
-    "mongoose": "^6.2.2"
-    
-    },
-    
     "devDependencies": {
-    
-        
-    "@types/express": "^4.17.13",
-    
-        
-    "ts-node": "^10.9.1",
-    
-        
-    "typescript": "^4.5.5"
-    
+        "@types/express": "^4.17.13",
+        "typescript": "^4.5.5"
     }
-}
+    }
+
