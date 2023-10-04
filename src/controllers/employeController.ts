@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import mongoose from 'mongoose';
-import Employe from '../models/Employe';
+import Employe from '../models/employe';
 
 // Fonction pour créer un nouvel employé
 const createEmploye = (req: Request, res: Response, next: NextFunction) => {

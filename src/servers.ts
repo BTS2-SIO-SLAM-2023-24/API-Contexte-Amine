@@ -3,6 +3,7 @@ import http from 'http';
 import mongoose from 'mongoose';
 import { config } from './config/config'; //les accolades {} sont utilisées pour spécifier les éléments particuliers
 import Logging from './library/Logging';
+import employeRoutes from './routes/employeRoutes';
 
 // Création d'une instance d'Express
 const router = express();
@@ -51,6 +52,7 @@ const StartServer = () => {
     });
 
     // Définition des routes de l'API
+    router.use('/employe', employeRoutes)
     //… a compléter plus tard
 
     // Healthcheck - une route simple pour vérifier que le serveur fonctionne
@@ -66,4 +68,5 @@ const StartServer = () => {
             message: error.message
         });
     });
+    
 };
